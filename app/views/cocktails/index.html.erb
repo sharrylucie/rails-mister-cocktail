@@ -4,7 +4,7 @@
     <div class="col-xs-6 col-md-4">
         <ul>
           <% @cocktails.each do |cocktail| %>
-            <li><%= cocktail.name  %></li>
+            <li><%= link_to cocktail.name, cocktail_path(cocktail)  %></li>
           <% end %>
         </ul>
     </div>
