@@ -1,9 +1,9 @@
 <div class="container">
-  <h1><%= @cocktail.name %></h1>
+  <h1><%= @cocktail.name.capitalize %></h1>
   <ul>
     <% @cocktail.doses.each do |dose| %>
     <li>
-      <%= "#{dose.description} #{dose.ingredient.name}" %>
+      <%= "#{dose.description.capitalize} #{dose.ingredient.name}" %>
       <%= link_to "Delete", dose_path(dose), method: :delete, class:"btn btn-default"  %>
     </li>
     <% end %>
