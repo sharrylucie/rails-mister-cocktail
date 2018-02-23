@@ -1,11 +1,13 @@
+
 <div class="container">
   <div class="row">
-    <div class="col-xs-6 col-md-4">
-        <ul >
-          <% @cocktails.each do |cocktail| %>
-            <li><%= link_to cocktail.name.capitalize, cocktail_path(cocktail), class: "cocktail"  %></li>
+        <ul>
+          <% @cocktails.each do |cocktail|%>
+          <div class="col-xs-12 col-sm-4 card">
+          <li><%= link_to "", cocktail_path(cocktail), class: "cocktail"  %></li>
+          <%= render "shared/card", cocktail: cocktail %>
+        </div>
           <% end %>
         </ul>
-    </div>
   </div>
 </div>
