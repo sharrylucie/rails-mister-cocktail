@@ -2,12 +2,12 @@
   <h1><%= @cocktail.name.capitalize %></h1>
   <ul>
     <% @cocktail.doses.each do |dose| %>
-    <li>
-      <%= "#{dose.description.capitalize} #{dose.ingredient.name}" %>
-      <%= link_to "Delete", dose_path(dose), method: :delete, class:"btn btn-default"  %>
+    <li class="list-ingredient">
+      <%= "#{dose.description.capitalize} - #{dose.ingredient.name.capitalize}" %>
+      <%= link_to "Delete", dose_path(dose), method: :delete, class:"btn btn-info btn-list"  %>
     </li>
     <% end %>
   </ul>
-  <%= link_to "Add a dose", new_cocktail_dose_path(@cocktail), class:"btn btn-default"  %>
-  <%= link_to "Back", cocktails_path, class:"btn btn-default" %>
+  <%= link_to "Add a dose", new_cocktail_dose_path(@cocktail), class:"btn btn-success"  %>
+  <%= link_to "Back", cocktails_path, class:"btn btn-success" %>
 </div>

@@ -1,6 +1,6 @@
 body, h1 {
-  background-color: rgb(253, 253, 253);
-  color: rgb(2, 2, 2);
+  background-color: $white;
+  color: $black;
   font-family: 'EB Garamond', serif;
 }
 
@@ -12,17 +12,22 @@ ul {
   list-style-type: none;
 }
 
+.container {
+  padding: 20px;
+}
+
 .cocktail{
-  color: rgb(2, 2, 2);
+  color: $black;
 }
 
 .cocktail:hover {
   text-decoration: none;
-  color: rgb(239, 203, 65)
 }
 
+.list-ingredient {
+  margin: 30px;
+}
 
-.btn-cocktail:hover {
-  background-color: rgb(239, 203, 65);
-
+.btn-list{
+  margin-left: 50px;
 }
