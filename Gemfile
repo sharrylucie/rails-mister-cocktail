@@ -36,11 +36,13 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 #FRONT END
-gem 'simple_form'
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass' # Bootstrap v3
 gem 'font-awesome-sass'
-
+gem 'simple_form'
+#upload images
+gem 'cloudinary'
+gem 'carrierwave', '~> 1.2'
 #SECURITY
 gem 'figaro'
 
