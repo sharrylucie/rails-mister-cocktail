@@ -11,15 +11,15 @@
 }
 
 /* Logo */
-// .navbar-wagon-brand img {
-//   height: 50px;
-//   text-decoration: none !important;
-// }
-
-.navbar-wagon-brand {
+.navbar-wagon-brand img {
+  height: 50px;
   text-decoration: none !important;
-  background-color: none !important;
 }
+
+.nestor {
+  color: $licorice;
+  font-family: 'EB Garamond';
+  }
 
 /* User Avatar */
 .navbar-wagon .avatar {

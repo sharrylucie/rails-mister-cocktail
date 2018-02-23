@@ -1,16 +1,16 @@
 <div class="navbar-wagon">
   <!-- Logo -->
   <%= link_to root_path, class: "navbar-wagon-brand" do %>
-  <h1>Nestor's cocktails</h1>
+  <%= image_tag "logo-nestor.png", height: 50 %>
   <% end %>
+  <!-- Name -->
+  <h3 class="nestor">Nestor's cocktails</h3>
 
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
     <!-- Links -->
-    <%= link_to "Host", "#", class: "navbar-wagon-item navbar-wagon-link" %>
-    <%= link_to "Trips", "#", class: "navbar-wagon-item navbar-wagon-link" %>
-    <%= link_to "Messages", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "New cocktail", new_cocktail_path(@cocktail), class:"btn btn-success" %>
 
     <!-- Avatar with dropdown menu -->
     <div class="navbar-wagon-item">
