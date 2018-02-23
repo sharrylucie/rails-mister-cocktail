@@ -16,9 +16,15 @@
   text-decoration: none !important;
 }
 
-.nestor {
+.nestor, .nestor-title {
   color: $licorice;
   font-family: 'EB Garamond';
+  text-align: center;
+}
+
+  .container p {
+    margin-top: -10px;
+    font-size: 12px;
   }
 
 /* User Avatar */
